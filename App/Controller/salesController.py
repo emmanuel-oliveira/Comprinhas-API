@@ -24,7 +24,7 @@ from App.Services.SocialNetworks.Telegram.telegram import TelegramMessenger
 def findSalesController() -> Tuple[FlaskResponse, int]:
     try:
 
-        LOGGER.log("BUSCANDO PROMOÇÕES")
+        LOGGER.info("BUSCANDO PROMOÇÕES")
         sales: List[Sale] = Shopee.getSales(pages=10, salesGt=1000, discountRateGt=70)
 
         if not sales:
@@ -56,7 +56,7 @@ def findSalesController() -> Tuple[FlaskResponse, int]:
 def generateTextForSales() -> Tuple[FlaskResponse, int]:
     try:
 
-        LOGGER.log("LISTANDO PROMOÇÕES SEM TEXTO")
+        LOGGER.info("LISTANDO PROMOÇÕES SEM TEXTO")
 
         sales = SalesDatabase.getSalesNotSent()
 
@@ -95,17 +95,17 @@ def generateTextForSales() -> Tuple[FlaskResponse, int]:
 def sendSaleToAdminsController() -> Tuple[FlaskResponse, int]:
     try:
 
-        LOGGER.log("LISTANDO OS ADMINS PARA ENVIO DA APROVAÇÃO")
+        LOGGER.info("LISTANDO OS ADMINS PARA ENVIO DA APROVAÇÃO")
         admins: List[Admin] = AdminsDatabase.getAdmins()
 
 
-        LOGGER.log("LISTANDO AS PROMOS NÃO ENVIADAS PARA APROVAÇÃO")
+        LOGGER.info("LISTANDO AS PROMOS NÃO ENVIADAS PARA APROVAÇÃO")
         sales: List[Sale] = SalesDatabase.getSalesToSendToApprove()
 
         if not sales:
             raise CustomException("Não há promoções a serem enviadas", statusCode=204)
 
-        LOGGER.log("ENVIANDO AS PROMOS PARA OS ADMINS")
+        LOGGER.info("ENVIANDO AS PROMOS PARA OS ADMINS")
         for sale in sales:
             for admin in admins:
                 buttons = [{"text": x["text"], "callback_data": x["callback_data"].format(saleId=sale.id)} for
