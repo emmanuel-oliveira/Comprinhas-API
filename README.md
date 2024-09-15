@@ -58,6 +58,11 @@ Esta API, desenvolvida em Flask (Python), automatiza o processo de criação e p
 
 ## Vídeo Demonstrativo
 
+[Assista ao vídeo no YouTube](https://youtu.be/Vw724imeWy0)
 
-[![Youtube - Video demo](https://i.ytimg.com/vi/Vw724imeWy0/maxresdefault.jpg)](https://youtu.be/Vw724imeWy0 "Youtube - Video demo")
+
+
+<a href="https://youtu.be/Vw724imeWy0" title="Youtube - Video demo">
+  <img src="https://i.ytimg.com/vi/Vw724imeWy0/maxresdefault.jpg" alt="Youtube - Video demo" width="600">
+</a>
 
