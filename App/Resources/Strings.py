@@ -1,0 +1,2 @@
+SALE_INFO_TEXT: str = """nome do produto: {productName}, preço atual: {price}, maior preço da história: {priceMax}, link da oferta: {link}, a oferta começa em: {periodStartTime}, a oferta termina em: {periodEndTime}, priceMin: {priceMin}"""
+SALE_INFO_METADATA: str = "\n=============================\n" + "priceMin: {priceMin} | priceMax: {priceMax} | price: {price} | priceDiscountRate: {priceDiscountRate} | periodEndTime {periodEndTime} " + "\n============================="
