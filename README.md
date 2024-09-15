@@ -3,7 +3,7 @@
 
 ## Objetivos
 
-Automatizar a gestão de promoções de links de afiliados, garantindo rapidez e precisão no envio de ofertas de qualidade para os administradores e posteriormente, para o público-alvo.
+Automatizar a gestão de promoções de links de afiliados, garantindo rapidez e precisão no envio de ofertas de qualidade para os administradores e posteriormente para o público-alvo.
 
 ## Descrição
 
