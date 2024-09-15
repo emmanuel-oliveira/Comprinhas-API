@@ -30,7 +30,7 @@ def findSalesController() -> Tuple[FlaskResponse, int]:
         if not sales:
             raise CustomException(message="Nenhuma promoção atende os requisitos", statusCode=204)
 
-        LOGGER.log("REGISTRANDO PROMOÇÕES ENCONTRADAS")
+        LOGGER.info("REGISTRANDO PROMOÇÕES ENCONTRADAS")
 
         SalesDatabase.createSales(sales=sales)
 
@@ -66,7 +66,7 @@ def generateTextForSales() -> Tuple[FlaskResponse, int]:
 
         prompt: PROMPT = promptHandler(taskName="makeSaleText")
 
-        LOGGER.log("GERANDO TEXTO PARA AS PROMOÇÕES")
+        LOGGER.info("GERANDO TEXTO PARA AS PROMOÇÕES")
         for sale in sales:
             saleInfoText: str = SALE_INFO_TEXT.format(
                 productName=sale.name,
