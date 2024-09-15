@@ -15,7 +15,7 @@ class AdminsTransactions:
         try:
             data = database[cls.collectionName].find_one(filter,
                                                          {"_id": 0}, session=session)
-            return [x for x in data]
+            return data
         except pymongo.errors.ConnectionFailure as e:
             raise CustomException(message=str(e), statusCode=500)
         except Exception as e:
