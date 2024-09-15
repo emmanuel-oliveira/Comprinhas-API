@@ -58,6 +58,6 @@ Esta API, desenvolvida em Flask (Python), automatiza o processo de criação e p
 
 ## Vídeo Demonstrativo
 
-[Vídeo demonstrativo](https://github.com/emmanuel-oliveira/Comprinhas-API/blob/main/.github/videos/VideoDemo.mp4)
 
+[![Youtube - Video demo](https://i.ytimg.com/vi/Vw724imeWy0/maxresdefault.jpg)](https://youtu.be/Vw724imeWy0 "Youtube - Video demo")
 
