@@ -56,7 +56,8 @@ Esta API, desenvolvida em Flask (Python), automatiza o processo de criação e p
 
 ![Imagem do fluxo de Aprovação e Publicação](https://github.com/emmanuel-oliveira/Comprinhas-API/blob/main/.github/images/approveFlow.png)
 
-## Vídeos Demonstrativos
+## Vídeo Demonstrativo
 
-[ADICIONAR VÍDEOS]
+[Vídeo demonstrativo](https://github.com/emmanuel-oliveira/Comprinhas-API/blob/main/.github/videos/videoDemo.mp4)
+
 
